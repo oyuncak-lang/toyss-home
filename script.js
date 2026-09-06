@@ -6,3 +6,6 @@ filters.forEach(button=>button.addEventListener('click',()=>{filters.forEach(b=>
 const dialog=document.querySelector('.lightbox'),dialogImg=dialog.querySelector('img'),dialogText=dialog.querySelector('p');
 items.forEach(item=>item.addEventListener('click',()=>{const img=item.querySelector('img');dialogImg.src=img.src;dialogImg.alt=img.alt;dialogText.textContent=item.querySelector('figcaption').textContent;dialog.showModal()}));
 dialog.querySelector('button').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
+const brandItems=[...document.querySelectorAll('.brand-item')];let brandIndex=0;
+function showBrand(index){brandItems.forEach((item,i)=>item.classList.toggle('current',i===index))}
+if(brandItems.length){showBrand(0);setInterval(()=>{if(innerWidth<=800){brandIndex=(brandIndex+1)%brandItems.length;showBrand(brandIndex)}},2200)}
