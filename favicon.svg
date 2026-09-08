@@ -1,8 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="116" fill="#15161a"/>
-  <path d="M112 104h288v92h-92v222H204V196h-92z" fill="#ffd21e"/>
-  <circle cx="112" cy="104" r="28" fill="#f12920"/>
-  <circle cx="400" cy="104" r="28" fill="#1976f3"/>
-  <circle cx="112" cy="408" r="28" fill="#39c64b"/>
-  <circle cx="400" cy="408" r="28" fill="#f04b9b"/>
+  <rect width="512" height="512" rx="104" fill="#15161a"/>
+  <g font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="154" text-anchor="middle">
+    <text x="72" y="255" fill="#ef3e23">T</text>
+    <text x="164" y="255" fill="#ffd21c">O</text>
+    <text x="256" y="255" fill="#1684ff">Y</text>
+    <text x="348" y="255" fill="#19c53b">S</text>
+    <text x="440" y="255" fill="#ef3e23">S</text>
+  </g>
+  <text x="256" y="354" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="82" letter-spacing="10" text-anchor="middle">HOME</text>
+  <path d="M112 132 L256 62 L400 132" fill="none" stroke="#ffd21c" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
