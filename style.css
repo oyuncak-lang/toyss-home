@@ -59,11 +59,13 @@ button{font:inherit}
 .brand-heading h2,.intro h2,.gallery-heading h2,.instagram-copy h2,.contact-heading h2{margin:0;font-size:clamp(2.2rem,4.2vw,4rem);font-weight:950;line-height:.99;letter-spacing:-.075em}
 .brand-heading p{margin:0 0 4px;color:var(--muted);font-size:.94rem}
 .brand-filters{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
-.brand-chip{min-width:0;min-height:69px;padding:10px 12px;display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:15px;background:#fff;color:var(--ink);cursor:pointer;text-align:left;font-size:.77rem;font-weight:950;letter-spacing:.025em;transition:transform .2s,box-shadow .2s,border-color .2s}
+.brand-chip{min-width:0;min-height:91px;padding:9px 11px;display:grid;grid-template-columns:minmax(0,1fr) 18px;grid-template-rows:43px auto;align-items:center;gap:6px 8px;border:1px solid var(--line);border-radius:15px;background:#fff;color:var(--ink);cursor:pointer;text-align:left;font-size:.77rem;font-weight:950;letter-spacing:.025em;transition:transform .2s,box-shadow .2s,border-color .2s}
 .brand-chip:hover,.brand-chip[aria-pressed=true]{transform:translateY(-3px);box-shadow:0 10px 22px #17191e12;border-color:#c8c6bc}
-.brand-mark{width:auto;min-width:60px;height:34px;flex:0 0 auto;padding:0 8px;display:grid;place-items:center;border-radius:9px;background:#1e2026;color:#fff;font-size:.86rem;font-weight:950}
-.brand-word{line-height:1;white-space:nowrap}.brand-chip.pilsan .brand-mark{background:#f2c900;color:#17191e;font-size:.7rem;letter-spacing:.01em}.brand-chip.lego .brand-mark{background:#e62f28;color:#fff;border:2px solid #fff;box-shadow:0 0 0 1px #e62f28, inset 0 -3px #bd1d18;font-size:.8rem;letter-spacing:-.04em;text-shadow:1px 1px #8c1310}.brand-chip.barbie .brand-mark{background:#ed4897;color:#fff;font:italic 800 1rem Georgia,serif}.brand-chip.hotwheels .brand-mark{background:linear-gradient(110deg,#ee342f,#f48520);color:#fff;font-size:.55rem;letter-spacing:-.025em;transform:skew(-7deg)}.brand-chip.nerf .brand-mark{background:#76b82a;color:#13220a;font-size:.83rem;font-style:italic}.brand-chip.bruder .brand-mark{background:#1675bb;color:#fff;font-size:.84rem;letter-spacing:-.04em}
-.chip-arrow{margin-left:auto;color:#a0a1a4;font-size:.9rem}
+.brand-mark{grid-column:1/-1;width:100%;height:43px;display:grid;place-items:center;overflow:hidden;border-radius:9px;background:#fff}
+.brand-logo{display:block;max-width:100%;max-height:39px;width:auto;height:auto;object-fit:contain}
+.brand-name{align-self:center;line-height:1.1;white-space:nowrap;font-size:.72rem;font-weight:950;letter-spacing:.035em}
+.brand-chip.pilsan .brand-logo{max-width:106px;max-height:37px}.brand-chip.lego .brand-logo{max-height:41px}.brand-chip.barbie .brand-logo{max-width:115px;max-height:34px}.brand-chip.hotwheels .brand-logo{max-width:125px;max-height:36px}.brand-chip.nerf .brand-logo{max-width:88px;max-height:36px}.brand-chip.bruder .brand-logo{max-width:120px;max-height:37px}
+.chip-arrow{justify-self:end;color:#a0a1a4;font-size:.9rem}
 .brand-chip[aria-pressed=true] .chip-arrow{color:var(--ink)}
 .brand-hint{margin:14px 0 0;color:#85878d;font-size:.76rem}
 .intro{padding-top:34px;padding-bottom:116px;display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;gap:clamp(48px,9vw,126px)}
@@ -204,7 +206,7 @@ button{font:inherit}
   .brand-heading p{font-size:.88rem}
   .brand-filters{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
   .brand-chip{min-height:60px;padding:8px 10px;border-radius:13px;font-size:.75rem}
-  .brand-mark{min-width:57px;height:31px;padding-inline:7px;border-radius:9px}
+  .brand-chip{min-height:83px;padding:8px 9px;grid-template-rows:39px auto;gap:5px 7px}.brand-mark{height:39px}.brand-logo{max-height:35px}.brand-name{font-size:.68rem}
   .brand-hint{font-size:.72rem}
   .intro{padding-top:12px;padding-bottom:76px;grid-template-columns:1fr;gap:31px}
   .intro h2{margin-top:19px}
